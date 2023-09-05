@@ -4,7 +4,8 @@ TEAMS = [
     'Warriors',
 ]
 
-PLAYERS = [{
+PLAYERS = [
+    {
         'name': 'Karl Saygan',
         'guardians': 'Heather Bledsoe',
         'experience': 'YES',
