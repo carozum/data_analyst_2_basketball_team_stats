@@ -13,3 +13,54 @@ A program that reads from the "constants" data (`PLAYERS` and `TEAMS`) in `const
 6. Organize players by size.
 
 7. Save the team analysis inside of the team's data structure.
+
+##Structure of the data: 
+
+teams = [
+    'Panthers',
+    'Bandits',
+    'Warriors',
+]
+
+players = [
+    {
+        'name': 'Karl Saygan',
+        'guardians': 'Heather Bledsoe',
+        'experience': 'YES',
+        'height': '42 inches'
+    },
+    {...},
+    {...},
+    ...
+]
+
+players_by_team = [
+    {
+        'name': 'Panthers',
+        'team_players': [
+            {},
+            {},
+            {},
+            ...
+        ]
+    },
+    {
+        'name': 'Panthers',
+        'players': [
+            {},
+            {},
+            {},
+            ...
+        ]
+    },
+    {
+        'name': 'Warriors',
+        'players': [
+            {},
+            {},
+            {},
+            ...
+        ]
+    },
+
+]
