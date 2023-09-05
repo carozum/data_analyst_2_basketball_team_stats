@@ -1,6 +1,12 @@
+from operator import itemgetter
+
+def sort_players(list_to_be_sorted, key_name):
+    # thanks to stackoverflow : https://stackoverflow.com/questions/72899/how-to-sort-a-list-of-dictionaries-by-a-value-of-the-dictionary-in-python
+    return sorted(list_to_be_sorted, key=itemgetter(key_name))
+
 
 def list_as_string(my_list, key):
-    #display a list of dictionaries as a string depending on selected key and on the type of the element.
+    #display from a list of dictionaries, a string depending on selected key and on the type the selected element.
     list_str = ''
     for i in range(len(my_list)):
         item = my_list[i]
@@ -22,7 +28,7 @@ def list_as_string(my_list, key):
 def display_stats(team):
     #team is a dictionary with 2 keys : "name" which is a string and "players" which is a list of players (dictionaries)
     name = team['name'].upper()
-    players = team['players']
+    players = sort_players(team['players'], 'height')
     
     # name of the team
     print(f"\nTeam: {name} Stats\n")
