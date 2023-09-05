@@ -38,7 +38,7 @@ def main():
                 print_stats(team_C)
             else: 
                 continue
-            print(players_by_team)
+            
         else: 
             break
 
