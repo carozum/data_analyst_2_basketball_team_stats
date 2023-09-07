@@ -50,24 +50,6 @@ def main():
                     continue
             
         
-        # if answer.upper() == 'A':
-        #     team_menu(teams)
-        #     team_selected = input("Choose a team:   ").upper()
-        #     #display stats
-        #     if team_selected == "A":
-        #         team_A = players_by_team[0]
-        #         print_stats(team_A)
-        #     elif team_selected == "B":
-        #         team_B = players_by_team[1]
-        #         print_stats(team_B)
-        #     elif team_selected == "C":
-        #         team_C = players_by_team[2]
-        #         print_stats(team_C)
-        #     else: 
-        #         continue
-            
-        # else: 
-        #     break
 
 if __name__ == '__main__':
     main()
